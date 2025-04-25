@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #444;
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        .content {
+            line-height: 1.5;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="content">
+        <p th:text="${'Xin chào ' + ten + ','}"></p>
+        <p>Cảm ơn quý khách đã đặt hàng tại VNK. Đơn hàng của quý khách sẽ được chuyển đi trong thời gian sớm nhất!</p>
+        <p>Quý khách có thể ấn vào nút bên dưới để theo dõi đơn hàng:</p>
+        <a th:href="@{${url}}" style="color: #fff;" class="button">Theo dõi đơn hàng</a>
+        <p>Nếu có bất kỳ câu hỏi hay thắc mắc, hãy gọi cho chúng tôi theo số hotline: 0912.345.678</p>
+        <p>Cảm ơn và hẹn gặp lại,</p>
+        <p>[VNK]</p>
+    </div>
+    <div class="footer">
+        <p>&copy; [VNK] 2023</p>
+    </div>
+</div>
+</body>
+
+</html>
