@@ -1,75 +1,65 @@
+# General
 HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-# application.properties
-src/main/resources/application.properties
-
-### VS Code ###
-.vscode/
-
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
-.vercel/
-
-node_modules
 .DS_Store
-dist
-dist-ssr
-coverage
+*.log
 *.local
 
-/cypress/videos/
-/cypress/screenshots/
+# Spring Boot (BackEnd)
+BackEnd/target/
+BackEnd/build/
+BackEnd/.mvn/
+!BackEnd/.mvn/wrapper/maven-wrapper.jar
+BackEnd/.apt_generated
+BackEnd/.classpath
+BackEnd/.factorypath
+BackEnd/.project
+BackEnd/.settings
+BackEnd/.springBeans
+BackEnd/.sts4-cache
+BackEnd/.idea/
+BackEnd/*.iws
+BackEnd/*.iml
+BackEnd/*.ipr
+BackEnd/nbproject/private/
+BackEnd/nbbuild/
+BackEnd/dist/
+BackEnd/nbdist/
+BackEnd/.nb-gradle/
+BackEnd/src/main/resources/application.properties
+BackEnd/src/main/resources/application*.yml
+BackEnd/src/main/resources/logback*.xml
 
-# Editor directories and files
+# Vue.js (FrontEnd)
+FrontEnd/node_modules/
+FrontEnd/dist/
+FrontEnd/dist-ssr/
+FrontEnd/coverage/
+FrontEnd/cypress/videos/
+FrontEnd/cypress/screenshots/
+FrontEnd/.vercel/
+FrontEnd/public/themes/soho-light/
+FrontEnd/public/themes/soho-dark/
+FrontEnd/public/themes/viva-light/
+FrontEnd/public/themes/viva-dark/
+FrontEnd/public/themes/mira/
+FrontEnd/public/themes/nano/
+FrontEnd/*.env
+
+# IDE
+.vscode/
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
-# Themes
-public/themes/soho-light/
-public/themes/soho-dark/
-public/themes/viva-light/
-public/themes/viva-dark/
-public/themes/mira/
-public/themes/nano/
+# Logs
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
